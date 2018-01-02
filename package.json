@@ -1,7 +1,7 @@
 {
   "name": "boilerplate-gulp",
   "version": "1.0.0",
-  "description": "Hello Group project boilerplate with Gulp, Scss, Browserify, and Babel",
+  "description": "Hello Great Works project boilerplate with Gulp, Scss, Browserify, and Babel",
   "main": "dist/app.js",
   "scripts": {
     "lint": "eslint src/js/**",
@@ -25,7 +25,7 @@
     "babelify": "^7.3.0",
     "browser-sync": "^2.18.6",
     "browserify": "^13.3.0",
-    "concurrently": "^3.4.0",
+    "concurrently": "^3.5.0",
     "cssnano": "^3.10.0",
     "eslint": "^4.0.0",
     "gulp": "^3.9.1",
