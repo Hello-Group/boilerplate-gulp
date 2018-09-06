@@ -11,12 +11,7 @@
 @import 'reset';
 @import 'global';
 
-@import 'components/parallax-hero.scss';
-@import 'components/section1.scss';
-@import 'components/section2.scss';
-@import 'components/section3.scss';
-@import 'components/section4.scss';
-@import 'components/section5.scss';
-@import 'components/section6.scss';
-@import 'components/section7.scss';
-@import 'components/horizontal-scroll.scss';
+@import 'components/hamburger';
+@import 'components/menu';
+
+@import 'views/home-view';
