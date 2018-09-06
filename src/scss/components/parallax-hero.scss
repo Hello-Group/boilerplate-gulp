@@ -1,0 +1,71 @@
+.parallax {
+  background-image: url("../img/hero.png");
+  min-height: 220px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+@include respond-min(mid) {
+  .parallax {
+    width: 100%;
+    min-height: 350px;
+  }
+}
+
+.headline-box {
+  width: 80%;
+  height: 147px;
+  background-color: #f7f3ef;
+  position: absolute;
+  top: -16%;
+  left: 10%;
+  .headline-box-text {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  h1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: Mobilo;
+    font-size: 38px;
+    font-weight: bold;
+    color: #00587a;
+    margin: 30px 0 0 0;
+  }
+  p {
+    font-family: Mobilo;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #b1b1b1;
+    margin: 14px 0 0 0;
+    font-size: 12px;
+  }
+}
+
+@include respond-min(large) {
+  .headline-box {
+    h1 {
+      font-size: 60px;
+    }
+  }
+}
+
+@include respond-min(wide) {
+  .headline-box {
+    height: 300px;
+    top: -28%;
+    h1 {
+      padding-top: 45px;
+      font-size: 100px;
+    }
+  }
+  .parallax {
+    height: 568px;
+    background-size: contain;
+  }
+}

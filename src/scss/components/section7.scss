@@ -1,0 +1,40 @@
+.section7 {
+  background-color: #2e4865;
+  
+  margin: 0 auto;
+  padding: 40px 0;
+  img {
+    float: right;
+  }
+}
+
+.section7-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.text-info,
+.text-description {
+  font-weight: 200;
+  font-family: Mobilo;
+  font-size: 16px;
+  line-height: 1.60;
+  color: #ffffff;
+}
+
+.text-info {
+  padding-bottom: 20px;
+}
+
+.danske-corner-img {
+  float: right;
+}
+
+@include respond-min(wide) {
+  .section7-container {
+    width: 60%;
+  }
+  .section7 {
+    padding: 80px;
+  }
+}

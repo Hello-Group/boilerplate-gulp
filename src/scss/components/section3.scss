@@ -1,0 +1,177 @@
+.section3 {
+  background-color: #f0e7e0;
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+.section3-container {
+  margin: 0px auto;
+  flex-wrap: wrap;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section3-img {
+  padding: 60px 0 0 0;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .mobile-hidden {
+    display: none;
+  }
+}
+
+.scrolling-wrapper {
+  padding: 40px 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .scrolling-wrapper {
+    -webkit-overflow-scrolling: touch;
+  }
+  .card1 {
+    position: relative;
+    text-align: center;
+    margin-left: 0;
+    display: inline-block;
+    width: 90%;
+    height: 480px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 0;
+    img {
+      margin: 80px 0 20px 0;
+      height: 20%;
+      width: auto;
+    }
+    h2 {
+      text-align: center;
+      font-family: Mobilo;
+      font-size: 22px;
+      line-height: 1.45;
+      color: #00587a;
+    }
+    p {
+      margin: 0 auto;
+      width: 84%;
+      white-space: normal;
+      font-family: Mobilo;
+      font-size: 16px;
+      line-height: 1.56;
+      text-align: center;
+      color: #505050;
+    }
+  }
+  .card2 {
+    position: relative;
+    text-align: center;
+    margin-left: 24px;
+    display: inline-block;
+    width: 90%;
+    height: 480px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 0;
+    img {
+      margin: 80px 0 20px 0;
+      height: 20%;
+      width: auto;
+    }
+    h2 {
+      text-align: center;
+      font-family: Mobilo;
+      font-size: 22px;
+      line-height: 1.45;
+      color: #00587a;
+    }
+    p {
+      margin: 0 auto;
+      width: 84%;
+      white-space: normal;
+      font-family: Mobilo;
+      font-size: 16px;
+      line-height: 1.56;
+      text-align: center;
+      color: #505050;
+    }
+  }
+  .card3 {
+    position: relative;
+    text-align: center;
+    margin-left: 24px;
+    display: inline-block;
+    width: 90%;
+    height: 480px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 0;
+    img {
+      margin: 80px 0 20px 0;
+      height: 20%;
+      width: auto;
+    }
+    h2 {
+      text-align: center;
+      font-family: Mobilo;
+      font-size: 22px;
+      line-height: 1.45;
+      color: #00587a;
+    }
+    p {
+      margin: 0 auto;
+      width: 84%;
+      white-space: normal;
+      font-family: Mobilo;
+      font-size: 16px;
+      line-height: 1.56;
+      text-align: center;
+      color: #505050;
+    }
+  }
+}
+
+@include respond-min(mid) {
+  .scrolling-wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .mobile-hidden {
+    display: block;
+  }
+  .card1 {
+    max-width: 430px;
+    margin-left: 0;
+  }
+  .card2 {
+    max-width: 430px;
+  }
+  .card3 {
+    max-width: 430px;
+  }
+}
+
+@include respond-min(wide) {
+  .section3 {
+    padding-top: 40px;
+  }
+  .scrolling-wrapper {
+    display: flex;
+    width: 80%;
+  }
+  .card1 {
+    width: 30%;
+    margin-left: 0;
+    p {
+      width: 50%;
+    }
+  }
+  .card2 {
+    width: 30%;
+  }
+  .card3 {
+    width: 30%;
+  }
+}

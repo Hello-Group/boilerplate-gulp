@@ -1,0 +1,81 @@
+.section5 {
+  padding-top: 120px;
+  display: relative;
+  background-color: #f0e7e0;
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+.section5-container {
+  margin: 0 auto;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 80%;
+}
+
+.slick-next,
+.slick-prev {
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  content: "";
+}
+
+.single-item img {
+  margin: 0 auto;
+}
+
+.section5-text {
+  h3 {
+    font-family: Mobilo;
+    font-size: 22px;
+    color: #00587a;
+  }
+  p {
+    font-family: Mobilo;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #505050;
+    margin: 0;
+  }
+}
+
+@include respond-min(mid) {
+  .section5 {
+    padding-top: 200px;
+  }
+  .single-item img {
+    width: 100%;
+  }
+}
+
+@include respond-min(wide) {
+  .section5 {
+    padding-top: 100px;
+  }
+  .section5-container {
+    width: 80%;
+  }
+  .arrows {
+    float: right;
+    padding: 10px;
+  }
+  .slick-list {
+    overflow: visible !important;
+  }
+  .section5-container {
+    .slick-slide {
+      box-sizing: border-box;
+      opacity: 0.25;
+      padding: 0 10px;
+    }
+  }
+  .slick-slide.slick-current.slick-active {
+    opacity: 1;
+  }
+  .section5-text {
+    padding: 0 10px;
+  }
+}

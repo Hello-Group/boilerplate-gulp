@@ -1,0 +1,111 @@
+.section1 {
+  background-color: #f0e7e0;
+  font-size: 18px;
+  position: relative;
+  display: flex;
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #f0e7e0;
+}
+
+.section1-text-container {
+  width: 80%;
+  padding: 140px 0;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  h3 {
+    font-family: Mobilo;
+    font-weight: bold;
+    line-height: 1.56;
+    color: #00587a;
+    width: 100%;
+    margin: 0 auto;
+  }
+  p {
+    font-family: Mobilo;
+    font-size: 16px;
+    line-height: 1.56;
+    color: #505050;
+  }
+  .section1-readmore {
+    p {
+      font-family: Mobilo;
+      font-size: 18px;
+      color: #00587a;
+    }
+  }
+  #expend {
+    display: none;
+  }
+  #expend + .smalldesc {
+    max-height: 64px;
+    overflow: hidden;
+    transition: all .3s ease;
+    @include respond-min(mid) {
+      max-height: 100%;
+    }
+  }
+  #expend:checked + .smalldesc {
+    max-height: 250px;
+  }
+  .read-more-label {
+    font-family: Mobilo;
+    font-size: 18px;
+    line-height: 1.78;
+    letter-spacing: normal;
+    color: #00587a;
+    cursor: pointer;
+    @include respond-min(mid) {
+      display: none;
+    }
+  }
+}
+
+.carousel-loop { 
+  .slick-track > div{
+   padding: 0 10px;
+  }
+}
+
+@include respond-min(mid) {
+  .section1-text {
+    max-width: 40%;
+    p {
+      margin: 0;
+    }
+  }
+  .section1-readmore {
+    display: none;
+  }
+  
+}
+
+@include respond-min(wide) {
+  .section1-text-container {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .section1-headline {
+    width: 50%;
+    h3 {
+      font-size: 32px;
+      line-height: normal;
+      width: 80%;
+      padding-top: 14px;
+    }
+  }
+  .service-1 {
+    width: 50%;
+    p {
+      width: 90%;
+    }
+  }
+  
+}
+
+
